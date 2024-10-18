@@ -1,5 +1,6 @@
 class SyringeRunner{
-	public static void main(String[] args){Syringe Syringe1=new Syringe(3.5,400);
+	public static void main(String[] args){
+		Syringe Syringe1=new Syringe(3.5,400);
 		Syringe1.size="S";
 		System.out.println("Syringe volume:"+Syringe1.volumeinmilimtrs);
 		System.out.println("Syringe size:"+Syringe1.size);

@@ -1,5 +1,6 @@
 class PendulumRunner{
-	public static void main(String[] args){Pendulum pendulum1=new Pendulum("vertical",2000);
+	public static void main(String[] args){
+		Pendulum pendulum1=new Pendulum("vertical",2000);
 		pendulum1.lengthIncm=15;
 		System.out.println("Pendulum length:"+pendulum1.lengthIncm);
 		System.out.println("Pendulum type:"+pendulum1.Type);

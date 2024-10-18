@@ -1,5 +1,6 @@
 class HarmoniumRunner{
-	public static void main(String[] args){Harmonium harmonium1=new Harmonium(1000,true);
+	public static void main(String[] args){
+		Harmonium harmonium1=new Harmonium(1000,true);
 		harmonium1.color="Brown";
 		System.out.println("Harmonium color:"+harmonium1.color);
 		System.out.println("Harmonium brand:"+harmonium1.brand);

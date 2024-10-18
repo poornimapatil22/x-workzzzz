@@ -5,7 +5,7 @@ class Syringe{
 	double cost;
 	
 	public Syringe(double needlesizeLocal, double costLocal){
-		System.out.println("create Syringe");
+		System.out.println("created Syringe");
 		needlesize=needlesizeLocal;
 		cost=costLocal;
 	}

@@ -1,5 +1,6 @@
 class TrumpetRunner{
-	public static void main(String[] args){Trumpet trumpet1=new Trumpet("Trumpet A",100);
+	public static void main(String[] args){
+		Trumpet trumpet1=new Trumpet("Trumpet A",100);
 		trumpet1.cost=5000;
 		System.out.println("Trumpet cost:"+trumpet1.cost);
 		System.out.println("Trumpet tune:"+trumpet1.isInTune);
