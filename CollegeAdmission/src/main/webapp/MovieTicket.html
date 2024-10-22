@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .ticket-form {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(1, 1, 0, 0.1);
+        }
+        h2 {
+            color: #007bff;
+        }
+        .btn-custom {
+            background-color: #28a745;
+            color: white;
+        }
+        .form-group label {
+            color: #343a40;
+        }
+        .form-control {
+            border: 1px solid #007bff;
+        }
+        .form-control:focus {
+            border-color: #0056b3;
+            box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+        }
+    </style>
+</head>
+<body>
+<link href="">
+<div class="container mt-5">
+    <div class="ticket-form">
+        <h2>Movie Ticket Booking</h2>
+        <form action="bookTicket" method="post">
+            <div class="form-group">
+                <label for="theatreName">Theatre Name:</label>
+                <input type="text" class="form-control" id="theatreName" name="theatreName" required>
+            </div>
+            <div class="form-group">
+                <label for="seatType">Seat Type:</label>
+                <select class="form-control" id="seatType" name="seatType" required>
+                    <option value="Regular">Regular</option>
+                    <option value="VIP">VIP</option>
+                    <option value="Premium">Premium</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="donation">Donation (Optional):</label>
+                <input type="number" class="form-control" id="donation" name="donation" min="0" step="1">
+            </div>
+            <div class="form-group">
+                <label for="dateTime">Date and Time:</label>
+                <input type="datetime-local" class="form-control" id="dateTime" name="dateTime" required>
+            </div>
+            <div class="form-group">
+                <label for="totalTicket">Total Ticket Quantity:</label>
+                <input type="number" class="form-control" id="totalTicket" name="totalTicket" min="1" required>
+            </div>
+            <button type="submit" class="btn btn-info">Book Ticket</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

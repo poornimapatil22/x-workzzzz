@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>X-workz</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .registration-form {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(1, 1, 0, 0.1);
+        }
+        h2 {
+            color: #007bff;
+        }
+        .btn-custom {
+            background-color: #28a745;
+            color: white;
+        }
+        .form-group label {
+            color: #343a40;
+        }
+        .form-control {
+            border: 1px solid #007bff;
+        }
+        .form-control:focus {
+            border-color: #0056b3;
+            box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+        }
+        .btn-custom {
+            background-color: #28a745;
+            color:
+        }
+
+    </style>
+</head>
+<body>
+<a href="CricketTicket.html">Cricket Ticket</a><br>
+<div class="container mt-50">
+    <div class="registration-form">
+        <h2>College Registration</h2>
+        <form action="join" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email"> Email Id:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Mobile No:</label>
+                <input type="number" class="form-control" id="mobNo" name="mobNo" required>
+            </div>
+            <div class="form-group">
+                <label for="adress">Adress:</label>
+                <input type="text" class="form-control" id="adress" name="adress" required>
+            </div>
+            <div class="form-group">
+                <label for="motherName">Mother Name:</label>
+                <input type="text" class="form-control" id="motherName" name="motherName" required></div>
+            <div class="form-group">
+                <label for="fatherName">Father Name:</label>
+                <input type="text" class="form-control" id="fatherName" name="fatherName" required></div>
+            <div class="form-group">
+                <label for="percentage">Percentage:</label>
+                <input type="number" class="form-control" id="percentage"  name="percentage" required>
+            </div>
+            <div class="form-group">
+                <label for="course">Course:</label>
+                <select id="course" class="form-control"  name="course" required>
+                    <option>Select</option>
+                    <option>B.E</option>
+                    <option>M.Tech</option>
+                    <option>Bsc</option>
+                    <option>B.Tech</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" class="form-control" id="age" name="age" required>
+            </div>
+            <button type="submit" class="btn btn-info" >ENTER</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

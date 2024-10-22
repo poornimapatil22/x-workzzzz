@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Ticket Booking</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .ticket-form {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(1, 1, 0, 0.1);
+        }
+        h2 {
+            color: #007bff;
+        }
+        .btn-custom {
+            background-color: #28a745;
+            color: white;
+        }
+        .form-group label {
+            color: #343a40;
+        }
+        .form-control {
+            border: 1px solid #007bff;
+        }
+        .form-control:focus {
+            border-color: #0056b3;
+            box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+        }
+    </style>
+</head>
+<body>
+<a href="FeedBack.html">FeedBack Form</a><br>
+<div class="container mt-5">
+    <div class="ticket-form">
+        <h2>Cricket Ticket Booking</h2>
+        <form action="bookCricketTicket" method="post">
+            <div class="form-group">
+                <label for="groundName">Ground Name:</label>
+                <input type="text" class="form-control" id="groundName" name="groundName" required>
+            </div>
+            <div class="form-group">
+                <label for="customerName">Customer Name:</label>
+                <input type="text" class="form-control" id="customerName" name="customerName" required>
+            </div>
+            <div class="form-group">
+                <label for="customerEmail">Customer Email:</label>
+                <input type="email" class="form-control" id="customerEmail" name="customerEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="seatType">Seat Type:</label>
+                <select class="form-control" id="seatType" name="seatType" required>
+                    <option value="General">General</option>
+                    <option value="VIP">VIP</option>
+                    <option value="Premium">Premium</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="numberOfTickets">Number of Tickets:</label>
+                <input type="number" class="form-control" id="numberOfTickets" name="numberOfTickets" min="1" required>
+            </div>
+            <button type="submit" class="btn btn-info">Book Tickets</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
